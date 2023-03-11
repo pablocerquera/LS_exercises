@@ -1,14 +1,6 @@
 let isOdd = (num) => {
-  return num % 2 === 0 ? false : true;
-}
-
-
-
-
-
-
-
-
+  return num % 2 !== 0;
+};
 console.log(isOdd(2)); // => false
 console.log(isOdd(5)); // => true
 console.log(isOdd(-17)); // => true
