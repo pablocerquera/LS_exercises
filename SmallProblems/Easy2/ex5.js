@@ -7,7 +7,8 @@ function prompt(msg) {
 
 function calculation(first, second, arr) {
   for (let idx = 0; idx < arr.length; idx++) {
-    prompt(`${first} ${arr[idx]} ${second} = ??? `);
+    let result = `${first} ${arr[idx]} ${second}`;
+    prompt(`${result} = ${eval(result)}`);
   }
 }
 
