@@ -1,26 +1,26 @@
 function mathSwitch(element, stack, register) {
   let topOfStack = stack.pop();
-  switch (true) {
-    case element === 'ADD':
+  switch (element) {
+    case 'ADD':
       return register + topOfStack;
-    case element === 'SUB':
+    case 'SUB':
       return register - topOfStack;
-    case element === 'MULT':
+    case 'MULT':
       return register * topOfStack;
-    case element === 'DIV':
+    case 'DIV':
       return Math.floor(register / topOfStack);
-    case element === 'REMAINDER':
+    case 'REMAINDER':
       return Math.floor(register % topOfStack);
   }
   return null;
 }
 
 function pushPopSwitch(element, stack, register) {
-  switch (true) {
-    case element === 'PUSH':
+  switch (element) {
+    case 'PUSH':
       stack.push(register);
       return register;
-    case element === 'POP':
+    case 'POP':
       return stack.pop();
   }
   return null;
