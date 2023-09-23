@@ -32,7 +32,6 @@ function minilang(string) {
   let register = 0;
   for (let idx = 0; idx < stringArray.length; idx++) {
     let element = stringArray[idx];
-    //debugger;
     if (!isNaN(Number(element))) {
       register = Number(element);
       continue;
